@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <RtlProvider>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
-          <Container>
+          <Container sx={{ display: "flex", flexDirection: "column" }}>
             <Router />
           </Container>
         </BrowserRouter>
