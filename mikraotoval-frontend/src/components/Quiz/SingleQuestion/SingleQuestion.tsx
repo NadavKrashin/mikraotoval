@@ -8,25 +8,13 @@ import {
   Button,
 } from "@mui/material";
 import { Option, useClasses } from "./styles";
+import { PropsType, QuestionOption } from "./types";
 
-type QuestionOption = {
-  id: number;
-  text: string;
-  isCorrect: boolean;
-  color?: string;
-};
-
-type propsType = {
-  questionTitle: string;
-  questionOptions: QuestionOption[];
-  isMultipleChoice: boolean;
-};
-
-const SingleQuestion: FC<propsType> = ({
+const SingleQuestion: FC<PropsType> = ({
   questionTitle,
   questionOptions,
   isMultipleChoice,
-}: propsType) => {
+}: PropsType) => {
   const [clickedOptionsIds, setClickedOptionsIds] = useState<
     QuestionOption["id"][]
   >([]);

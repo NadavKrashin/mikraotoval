@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Horev";
+  src: local("Horev CLM"), local("Horev CLM-Regular"),
+    url("assets/fonts/HorevCLMHeavy.woff") format("woff");
+}
